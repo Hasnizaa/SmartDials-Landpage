@@ -57,7 +57,7 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-4 md:gap-8 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '0.4s' }}>
+          <div className="grid grid-cols-3 gap-4 md:gap-8 max-w-2xl mx-auto mb-12 animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <div className="glass rounded-xl p-4 md:p-6">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Clock className="w-5 h-5 text-primary" />
@@ -80,6 +80,42 @@ const Hero = () => {
               </div>
               <div className="text-2xl md:text-3xl font-bold text-foreground">24/7</div>
               <div className="text-sm text-muted-foreground">Availability</div>
+            </div>
+          </div>
+
+          {/* Video Mockup Placeholder */}
+          <div className="max-w-4xl mx-auto animate-fade-up" style={{ animationDelay: '0.5s' }}>
+            <div className="relative rounded-2xl overflow-hidden glass border border-border/50 shadow-glow">
+              {/* Browser Chrome */}
+              <div className="flex items-center gap-2 px-4 py-3 bg-muted/30 border-b border-border/50">
+                <div className="flex gap-1.5">
+                  <div className="w-3 h-3 rounded-full bg-destructive/60" />
+                  <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
+                  <div className="w-3 h-3 rounded-full bg-green-500/60" />
+                </div>
+                <div className="flex-1 mx-4">
+                  <div className="bg-background/50 rounded-md px-3 py-1 text-xs text-muted-foreground text-center">
+                    smartdials-dashboard.onrender.com
+                  </div>
+                </div>
+              </div>
+              
+              {/* Video Placeholder Box */}
+              <div className="aspect-video bg-gradient-to-br from-muted/20 to-muted/40 flex items-center justify-center relative">
+                <div className="absolute inset-0 bg-gradient-radial from-primary/5 to-transparent" />
+                <div className="text-center z-10">
+                  <div className="w-20 h-20 rounded-full glass flex items-center justify-center mx-auto mb-4 cursor-pointer hover:scale-110 transition-transform group">
+                    <Play className="w-8 h-8 text-primary group-hover:text-primary-foreground transition-colors ml-1" />
+                  </div>
+                  <p className="text-muted-foreground text-sm">Click to play demo video</p>
+                  <p className="text-muted-foreground/60 text-xs mt-1">Replace with your video embed</p>
+                </div>
+                
+                {/* Decorative Elements */}
+                <div className="absolute top-4 left-4 w-24 h-16 rounded-lg bg-primary/10 animate-pulse" />
+                <div className="absolute top-4 right-4 w-32 h-8 rounded-lg bg-primary/10 animate-pulse" style={{ animationDelay: '0.5s' }} />
+                <div className="absolute bottom-4 left-4 right-4 h-12 rounded-lg bg-primary/5" />
+              </div>
             </div>
           </div>
         </div>
