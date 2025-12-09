@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,7 +18,6 @@ const Navbar = () => {
   const navLinks = [
     { href: "#features", label: "Features" },
     { href: "#channels", label: "Channels" },
-    { href: "#pricing", label: "Pricing" },
     { href: "#faq", label: "FAQ" },
   ];
 
@@ -50,7 +50,8 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-2">
+          <ThemeToggle />
           <a
             href="https://smartdails-dashboard.onrender.com/#"
             target="_blank"
@@ -58,18 +59,21 @@ const Navbar = () => {
           >
             <Button variant="ghost">Login</Button>
           </a>
-          <a href="#pricing">
+          <a href="#cta">
             <Button variant="hero">Get Started</Button>
           </a>
         </div>
 
         {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-foreground"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center gap-2">
+          <ThemeToggle />
+          <button
+            className="text-foreground"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -96,7 +100,7 @@ const Navbar = () => {
                   Login
                 </Button>
               </a>
-              <a href="#pricing">
+              <a href="#cta">
                 <Button variant="hero" className="w-full">
                   Get Started
                 </Button>
