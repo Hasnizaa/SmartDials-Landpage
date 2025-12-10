@@ -12,7 +12,7 @@ const Footer = () => {
                 <span className="text-primary-foreground font-bold text-lg">S</span>
               </div>
               <span className="font-heading text-xl font-bold text-foreground">
-                SmartDials
+                SmartDails
               </span>
             </a>
             <p className="text-muted-foreground mb-4 max-w-sm">
@@ -43,7 +43,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a></li>
               <li><a href="#channels" className="text-muted-foreground hover:text-foreground transition-colors">Channels</a></li>
-              <li><a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</a></li>
+              <li><a href="#product" className="text-muted-foreground hover:text-foreground transition-colors">Product</a></li>
               <li><a href="#faq" className="text-muted-foreground hover:text-foreground transition-colors">FAQ</a></li>
             </ul>
           </div>
@@ -61,7 +61,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} SmartDials. All rights reserved.
+            © {new Date().getFullYear()} SmartDails. All rights reserved.
           </p>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <span>Powered by AI</span>

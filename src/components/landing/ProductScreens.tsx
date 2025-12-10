@@ -5,7 +5,7 @@ import {
   Send, 
   BarChart3,
   Monitor,
-  Play
+  Settings
 } from "lucide-react";
 
 const screens = [
@@ -13,26 +13,42 @@ const screens = [
     icon: Inbox,
     title: "Unified Multi-Channel Inbox",
     description: "All conversations from WhatsApp, Messenger, Instagram, Email, and more in one place.",
+    video: "/wasap.mp4",
+    poster: "/inbox-poster.png",
   },
   {
     icon: Users,
     title: "Contact & Lead Management",
     description: "Comprehensive contact database with lead scoring, tags, and conversation history.",
+    poster: "/dashboard.png",
   },
   {
     icon: Workflow,
     title: "Automation Builder",
     description: "Visual workflow builder to create complex automation sequences without code.",
+    video: "/automation.mp4",
+    poster: "/automation-poster.png",
   },
   {
     icon: Send,
     title: "Campaign & Broadcast Manager",
     description: "Send targeted messages and campaigns to segmented contact lists at scale.",
+    video: "/campaign.mp4",
+    poster: "/campaign-poster.png",
   },
   {
     icon: BarChart3,
     title: "Analytics Dashboard",
     description: "Real-time insights into team performance, response times, and customer satisfaction.",
+    video: "/analytics.mp4",
+    poster: "/analytics-poster.png",
+  },
+  {
+    icon: Settings,
+    title: "Client Project Management",
+    description: "Switch between multiple client workspaces with isolated automation and chat routing.",
+    video: "/projects.mp4",
+    poster: "/projects-poster.png",
   },
 ];
 
@@ -56,14 +72,12 @@ const ProductScreens = () => {
           </p>
         </div>
 
-        {/* Product Screen Mockups with Video Placeholders */}
+        {/* Grid – now 6 boxes */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {screens.map((screen, index) => (
             <div
               key={screen.title}
-              className={`glass rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 ${
-                index === 0 ? 'md:col-span-2 lg:col-span-2' : ''
-              }`}
+              className="glass rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:-translate-y-1"
             >
               {/* Browser Header */}
               <div className="flex items-center gap-2 px-4 py-3 bg-muted/30 border-b border-border/50">
@@ -78,21 +92,27 @@ const ProductScreens = () => {
                 </div>
               </div>
 
-              {/* Video Placeholder */}
-              <div className={`${index === 0 ? 'aspect-[2/1]' : 'aspect-video'} bg-gradient-to-br from-muted/50 to-muted/20 flex items-center justify-center p-6 cursor-pointer group`}>
-                <div className="text-center">
-                  <div className="w-16 h-16 rounded-full glass flex items-center justify-center mx-auto mb-4 border border-primary/30 group-hover:border-primary/60 group-hover:bg-primary/10 transition-all duration-300">
-                    <Play className="w-8 h-8 text-primary ml-1" />
-                  </div>
-                  <h3 className="font-semibold text-foreground mb-2">{screen.title}</h3>
-                  <p className="text-muted-foreground text-sm max-w-xs mx-auto">
-                    {screen.description}
-                  </p>
-                  <p className="text-muted-foreground/60 text-xs mt-3">
-                    Click to play demo video
-                  </p>
-                </div>
+              {/* Video mockup (no play button) */}
+              <div className="aspect-video bg-black relative">
+                <video
+                  src={screen.video}
+                  poster={screen.poster}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
               </div>
+
+              {/* Text */}
+              <div className="p-6 text-center">
+                <h3 className="font-semibold text-foreground mb-2">{screen.title}</h3>
+                <p className="text-muted-foreground text-sm max-w-xs mx-auto">
+                  {screen.description}
+                </p>
+              </div>
+
             </div>
           ))}
         </div>

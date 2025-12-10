@@ -16,10 +16,10 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { href: "#features", label: "Features" },
     { href: "#channels", label: "Channels" },
-    { href: "#benefits", label: "Why SmartDails" },
+    { href: "#features", label: "Features" },
     { href: "#bpo", label: "BPO Solution" },
+    { href: "#benefits", label: "Why SmartDails" },
     { href: "#faq", label: "FAQ" },
   ];
 
@@ -61,7 +61,7 @@ const Navbar = () => {
           >
             <Button variant="ghost">Login</Button>
           </a>
-          <a href="#cta">
+          <a href="#product">
             <Button variant="hero">Get Started</Button>
           </a>
         </div>

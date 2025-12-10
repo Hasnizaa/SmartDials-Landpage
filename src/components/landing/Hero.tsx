@@ -41,20 +41,20 @@ const Hero = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up"
             style={{ animationDelay: "0.3s" }}
           >
-            <a href="#features">
+            <a href="#product">
               <Button variant="hero" size="xl">
                 Get Started <Play className="w-5 h-5 ml-2" />
               </Button>
             </a>
 
             <a
-              href="https://t.me/SmartDailsBot"
+              href="https://t.me/smartdails_kf_bot"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button variant="glass" size="xl">
                 <Send className="w-5 h-5" />
-                Chat on Telegram
+                Try it FREE
               </Button>
             </a>
           </div>

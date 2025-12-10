@@ -11,19 +11,19 @@ const faqs = [
     answer: "Yes, SmartDials is fully automated and can handle customer inquiries 24/7 without human intervention. However, you can configure human takeover for complex issues at any time. The AI handles routine queries while your team focuses on high-value interactions.",
   },
   {
-    question: "What languages does SmartDials support?",
-    answer: "SmartDials supports multiple languages including Malay (Bahasa Malaysia), English, Chinese (Mandarin & Cantonese), Tamil, and more. The AI automatically detects the customer's language and responds accordingly.",
+    question: "What languages does SmartDails support?",
+    answer: "SmartDials supports multiple languages including Malay (Bahasa Malaysia), English and Chinese (Mandarin & Hokkien) only. The AI automatically detects the customer's language and responds accordingly.",
   },
   {
     question: "How secure is my customer data?",
     answer: "We use enterprise-grade encryption for all data in transit and at rest. Our infrastructure complies with industry security standards, and we never share your data with third parties. Your customer information is safe with us.",
   },
   {
-    question: "Can SmartDials integrate with my existing CRM or POS?",
-    answer: "Absolutely! SmartDials integrates seamlessly with popular CRM systems, POS systems, and other business tools via API or no-code connectors. Our team can help set up custom integrations for your specific needs.",
+    question: "Can SmartDails integrate with my existing CRM or POS?",
+    answer: "Absolutely! SmartDails integrates seamlessly with popular CRM systems, POS systems, and other business tools via API or no-code connectors. Our team can help set up custom integrations for your specific needs.",
   },
   {
-    question: "How long does it take to set up SmartDials?",
+    question: "How long does it take to set up SmartDails?",
     answer: "Most businesses are up and running within 24-48 hours. We provide guided onboarding, help train the AI on your company knowledge base, and ensure everything is configured correctly before you go live.",
   },
   {
