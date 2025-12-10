@@ -8,11 +8,11 @@ import {
 const faqs = [
   {
     question: "Is the AI fully automated or do I need staff?",
-    answer: "Yes, SmartDials is fully automated and can handle customer inquiries 24/7 without human intervention. However, you can configure human takeover for complex issues at any time. The AI handles routine queries while your team focuses on high-value interactions.",
+    answer: "Yes, SmartDails is fully automated and can handle customer inquiries 24/7 without human intervention. However, you can configure human takeover for complex issues at any time. The AI handles routine queries while your team focuses on high-value interactions.",
   },
   {
     question: "What languages does SmartDails support?",
-    answer: "SmartDials supports multiple languages including Malay (Bahasa Malaysia), English and Chinese (Mandarin & Hokkien) only. The AI automatically detects the customer's language and responds accordingly.",
+    answer: "SmartDails supports multiple languages including Malay (Bahasa Malaysia), English and Chinese (Mandarin & Hokkien) only. The AI automatically detects the customer's language and responds accordingly.",
   },
   {
     question: "How secure is my customer data?",
