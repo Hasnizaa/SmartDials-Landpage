@@ -14,26 +14,24 @@ const screens = [
     title: "Unified Multi-Channel Inbox",
     description: "All conversations from WhatsApp, Messenger, Instagram, Email, and more in one place.",
     video: "/wasap.mp4",
-    poster: "/inbox-poster.png",
   },
   {
     icon: Users,
     title: "Contact & Lead Management",
     description: "Comprehensive contact database with lead scoring, tags, and conversation history.",
-    video: "/contact.mp4",
+    video: "/mesenger.mp4",
   },
   {
     icon: Workflow,
     title: "Automation Builder",
     description: "Visual workflow builder to create complex automation sequences without code.",
     video: "/tele.mp4",
-    poster: "/automation-poster.png",
   },
   {
     icon: Send,
     title: "Campaign & Broadcast Manager",
     description: "Send targeted messages and campaigns to segmented contact lists at scale.",
-    video: "/campaign.mp4",
+    video: "/webchat.mp4",
     poster: "/campaign-poster.png",
   },
   {
@@ -41,14 +39,12 @@ const screens = [
     title: "Analytics Dashboard",
     description: "Real-time insights into team performance, response times, and customer satisfaction.",
     video: "/dashboardvid.mp4",
-    poster: "/analytics-poster.png",
   },
   {
     icon: Settings,
     title: "Client Project Management",
     description: "Switch between multiple client workspaces with isolated automation and chat routing.",
-    video: "/projects.mp4",
-    poster: "/projects-poster.png",
+    video: "insta.mp4",
   },
 ];
 
