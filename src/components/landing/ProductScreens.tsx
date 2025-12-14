@@ -11,26 +11,26 @@ import {
 const screens = [
   {
     icon: Inbox,
-    title: "Unified Multi-Channel Inbox",
-    description: "All conversations from WhatsApp, Messenger, Instagram, Email, and more in one place.",
+    title: "WhatsApp Business Inbox",
+    description: "Manage high-volume WhatsApp conversations with instant replies, automation, and agent assignment — all from one secure inbox.",
     video: "/wasap.mp4",
   },
   {
     icon: Users,
-    title: "Contact & Lead Management",
-    description: "Comprehensive contact database with lead scoring, tags, and conversation history.",
+    title: "Facebook Messenger Inbox",
+    description: "Manage Facebook Messenger conversations at scale with automated responses, tags, and smooth agent handover.",
     video: "/mesenger.mp4",
   },
   {
     icon: Workflow,
-    title: "Automation Builder",
-    description: "Visual workflow builder to create complex automation sequences without code.",
+    title: "Telegram Messaging Hub",
+    description: "Handle fast-moving Telegram chats with organized threads, tags, and seamless team collaboration for real-time engagement.",
     video: "/tele.mp4",
   },
   {
     icon: Send,
-    title: "Campaign & Broadcast Manager",
-    description: "Send targeted messages and campaigns to segmented contact lists at scale.",
+    title: "Web Chat Widget",
+    description: "Engage website visitors instantly with live chat, automated greetings, and seamless transition to human agents.",
     video: "/webchat.mp4",
     poster: "/campaign-poster.png",
   },
@@ -42,8 +42,8 @@ const screens = [
   },
   {
     icon: Settings,
-    title: "Client Project Management",
-    description: "Switch between multiple client workspaces with isolated automation and chat routing.",
+    title: "Instagram Direct Inbox",
+    description: "Respond to Instagram DMs efficiently with unified threads, media previews, quick replies, and lead tracking.",
     video: "insta.mp4",
   },
 ];
